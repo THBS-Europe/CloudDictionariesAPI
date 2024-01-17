@@ -1,12 +1,17 @@
 ---
 name: CloudDictionariesAPI
 description: <p><b>Hi Team - This is the Cloud Web Portal service API documentation</b></p>
-basePath: /clouddictionariesapi
+basePath: /api/clouddictionariesapi
 openApiSpec: CloudDictionariesAPI.yaml
 environmentSpec: Dev
 type: API
 authMethod: none
+azureRateLimit:
+  noOfCalls: 50
+  renewalPeriod: 60
+  ratepolicy: product
+  counter: ip-address
 product:
-  productName: NewProduct
+  productName: testAPi
 schemes: []
 routes: []
